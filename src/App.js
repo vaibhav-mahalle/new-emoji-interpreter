@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const emojiDictionary = {
-  "😀": "laughing",
-  "😩": "sad",
-  "😷": "wear your mask",
-  "😭": "crying",
-  "😊": "smiling",
-  "😤": "angry",
-  "😱": "fearful"
+  "🍇": "grapes",
+  "🍈": "melon",
+  "🍉": "watermelon",
+  "🍊": "Tangerine",
+  "🍋": "lemon",
+  "🍌": "banana",
+  "🍍": "pineapple",
+  "🍎": "apple",
+  "🍐": "pear",
+  "🍑": "peach",
+  "🍒": "cherries",
+  "🍓": "strawberry",
+  "🍅": "i am fruit in theory"
 };
 
 export default function App() {
@@ -33,10 +39,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1> Emojipedia </h1>
+      <h1> Fruit-emojis </h1>
       <input style={{ padding: 2 }} onChange={inputTaker}></input>
       <h2 style={{ color: "red" }}>{input} </h2>
-      <h3>emojis we know </h3>
+      <h3>fruits we know </h3>
       {emojis.map(function (emojis) {
         return (
           <span
